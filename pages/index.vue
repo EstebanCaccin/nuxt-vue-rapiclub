@@ -53,6 +53,7 @@
                 </div>
             </div>
             <!-- Search end -->
+            <!-- Cards -->
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
                     <div v-for="(category, c) in categorys" :key="c" class="w-full">
@@ -76,6 +77,12 @@
                     </div>
                 </div>
             </div>
+            <!-- Cards end -->
+            <Discont
+            background="bg-green-400"
+            discont=10
+            title="falabella"
+             />
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
                 <div class="bg-red-600 h-48 sm:h-auto">
                     <div class="flex flex-wrap justify-center">
@@ -86,15 +93,63 @@
                         </div>
                         <div class="w-full sm:w-1/2 m-auto flex justify-center">
                             <button
-                                class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex justify-start ml-6  font-base border border-white text-center"
+                                class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex justify-start ml-6 font-base border border-white text-center"
                             >Ver beneficios en mi ciudad</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Benefit -->
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+                <div class="flex justify-center mb-4 font-bold text-xl">
+                    <h1 class="text-black font-normal text-3xl">
+                        Estos son algunos de los
+                        <br />beneficios que tenemos para vos
+                    </h1>
+                </div>
+            </div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+                <div class="flex justify-center mb-4 font-bold text-xl">
+                    <h1 class="text-red-500">
+                        <span>
+                            <i class="far fa-star"></i>
+                        </span>
+                        Destacados
+                    </h1>
+                </div>
+
                 <Carousel />
             </div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+                <div class="flex justify-center mb-4 font-bold text-xl">
+                    <h1 class="text-red-500">
+                        <span>
+                            <i class="far fa-grin-stars"></i>
+                        </span>
+                        Nuevos
+                    </h1>
+                </div>
+
+                <Carousel />
+            </div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+                <div class="flex justify-center mb-4 font-bold text-xl">
+                    <h1 class="text-red-500">
+                        <span>
+                            <i class="far fa-thumbs-up"></i>
+                        </span>
+                        Más elegidos
+                    </h1>
+                </div>
+
+                <Carousel />
+            </div>
+            <!-- Benefit end -->
+             <Discont
+            background="bg-purple-400"
+            discont=15
+            title="SommierCenter"
+             />
         </div>
     </div>
 </template>

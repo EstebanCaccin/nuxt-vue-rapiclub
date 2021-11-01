@@ -23,3 +23,8 @@
     position: relative;
     top: 5.2rem;
 }
+
+#carousel .slick-arrow:before {
+    opacity: none!important;
+    color: red!important;
+}
