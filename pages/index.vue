@@ -1,5 +1,6 @@
 <template>
     <div id="home">
+        <!-- Musimundo -->
         <div class="bg-nav h-80 md:h-96">
             <div class="flex flex-wrap justify-center">
                 <div class="w-full mt-8">
@@ -32,6 +33,8 @@
                 </div>
             </div>
         </div>
+        <!-- Musimundo end -->
+        <!-- Search -->
         <div class="container m-auto mt-8">
             <div class="flex flex-wrap justify-center">
                 <div class="w-full sm:w-1/2 m-auto p-4">
@@ -50,26 +53,28 @@
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
                     <div v-for="(category, c) in categorys" :key="c" class="w-full">
-                        <div
-                        class="card-card"
-                            v-bind:class="[category.background]"
-                        >
+                        <div class="card-card" v-bind:class="[category.background]">
                             <div class="flex justify-center">
                                 <div class="w-1/2">
-                                    <h3 class="text-white text-left text-sm font-bold mt-5 ml-2">{{ category.name }}</h3>
+                                    <h3
+                                        class="text-white text-left text-sm font-bold mt-5 ml-2"
+                                    >{{ category.name }}</h3>
                                 </div>
                                 <div class="w-1/2">
                                     <i v-bind:class="[category.icon]"></i>
                                 </div>
                             </div>
                             <div class="w-1/1">
-                                <p class="text-xs text-left text-white mt-4 ml-2">{{ category.subname }}</p>
+                                <p
+                                    class="text-xs text-left text-white mt-4 ml-2"
+                                >{{ category.subname }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Search end -->
     </div>
 </template>
 
