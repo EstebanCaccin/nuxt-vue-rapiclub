@@ -1,0 +1,28 @@
+footer .copyright-desktop,
+footer .apps-logo-desktop {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    footer .copyright-desktop,
+    footer .apps-logo-desktop {
+        display: block;
+    }
+    footer .apps-logo-desktop {
+        display: flex;
+        justify-content: center;
+    }
+    footer .copyright-mobile,
+    footer .apps-logo-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1360px) {
+    footer,
+    nav,
+    .bg-nav {
+        margin: 0 auto;
+        max-width: 1360px;
+    }
+}

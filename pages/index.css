@@ -1,0 +1,18 @@
+#home .musimundo-img {
+    height: 100%;
+    max-height: 80px;
+    width: 100%;
+    max-width: 96px;
+}
+
+.card-card {
+    height: 113px;
+    width: 151px;
+}
+
+@media (min-width: 400px) {
+    .card-card {
+        height: 113px;
+        width: 100%;
+    }
+}

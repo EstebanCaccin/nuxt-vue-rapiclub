@@ -1,0 +1,14 @@
+#mobile-menu {
+    position: absolute;
+    top: 0rem;
+    height: 100vh;
+}
+
+#mobile-menu a {
+    color: red
+}
+
+nav,
+.bg-nav {
+    background: #00AF60;
+}
