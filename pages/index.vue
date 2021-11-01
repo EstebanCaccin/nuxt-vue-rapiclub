@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <!-- Musimundo -->
+        <!-- Hero -->
         <div class="bg-nav h-80 md:h-96">
             <div class="flex flex-wrap justify-center">
                 <div class="w-full mt-8">
@@ -33,23 +33,26 @@
                 </div>
             </div>
         </div>
-        <!-- Musimundo end -->
+        <!-- Hero end -->
         <!-- Search -->
         <div class="container m-auto mt-8">
-            <div class="flex flex-wrap justify-center">
-                <div class="w-full sm:w-1/2 m-auto p-4">
-                    <h2
-                        class="ml-2 font-light text-xl"
-                    >Empezá a disfrutar de diferentes opciones para cada estilo de vida</h2>
-                </div>
-                <div class="w-full sm:w-1/2 m-auto">
-                    <input
-                        type="search"
-                        class="bg-purple-white border border-red-600 focus:border-none p-4"
-                        placeholder="¿Qué estas buscando"
-                    />
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full sm:w-1/2 m-auto pt-4">
+                        <h2
+                            class="ml-2 font-light text-xl text-left"
+                        >Empezá a disfrutar de diferentes opciones para cada estilo de vida</h2>
+                    </div>
+                    <div class="w-full sm:w-1/2 m-auto">
+                        <input
+                            type="search"
+                            class="bg-purple-white border border-red-600 focus:border-none p-4"
+                            placeholder="¿Qué estas buscando"
+                        />
+                    </div>
                 </div>
             </div>
+            <!-- Search end -->
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
                     <div v-for="(category, c) in categorys" :key="c" class="w-full">
@@ -73,50 +76,70 @@
                     </div>
                 </div>
             </div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+                <div class="bg-red-600 h-48 sm:h-auto">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="w-full sm:w-1/2 m-auto p-4 flex justify-center">
+                            <h2
+                                class="ml-2 font-light text-xl text-white"
+                            >Disfrutá de beneficios exclusivos y promociones increibles</h2>
+                        </div>
+                        <div class="w-full sm:w-1/2 m-auto flex justify-center">
+                            <button
+                                class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex justify-start ml-6  font-base border border-white text-center"
+                            >Ver beneficios en mi ciudad</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+                <Carousel />
+            </div>
         </div>
-        <!-- Search end -->
     </div>
 </template>
 
 <script>
 import './index.css';
+import Carousel from '../components/Carousel/index.vue';
 export default {
-    layout: 'default',
+    layout: "default",
     data() {
         return {
             images: [
                 {
-                    src: '/logo-musimundo-white.png'
+                    src: "/logo-musimundo-white.png"
                 }
             ],
             categorys: [
                 {
-                    name: 'Tecnología',
-                    subname: 'Hogar en general',
-                    icon: 'fas fa-mobile-alt text-3xl text-white mt-4',
-                    background: 'bg-green-700'
+                    name: "Tecnología",
+                    subname: "Hogar en general",
+                    icon: "fas fa-mobile-alt text-3xl text-white mt-4",
+                    background: "bg-green-700"
                 },
                 {
-                    name: 'Compras',
-                    subname: 'Moda, jugueterías, belleza',
-                    icon: 'fas fa-shopping-bag text-3xl text-white mt-4',
-                    background: 'bg-indigo-900'
+                    name: "Compras",
+                    subname: "Moda, jugueterías, belleza",
+                    icon: "fas fa-shopping-bag text-3xl text-white mt-4",
+                    background: "bg-indigo-900"
                 },
                 {
-                    name: 'Recreación',
-                    subname: 'Viajes, gastronomía, espectaculos',
-                    icon: 'fas fa-plane text-3xl text-white mt-4',
-                    background: 'bg-blue-600'
+                    name: "Recreación",
+                    subname: "Viajes, gastronomía, espectaculos",
+                    icon: "fas fa-plane text-3xl text-white mt-4",
+                    background: "bg-blue-600"
                 },
                 {
-                    name: 'Y más',
-                    subname: 'Combustibles, automotriz',
-                    icon: 'fas fa-car text-3xl text-white mt-4',
-                    background: 'bg-purple-600'
+                    name: "Y más",
+                    subname: "Combustibles, automotriz",
+                    icon: "fas fa-car text-3xl text-white mt-4",
+                    background: "bg-purple-600"
                 }
             ]
-        }
-    }
+        };
+    },
+    components: { Carousel }
 }
 </script>
 <style>

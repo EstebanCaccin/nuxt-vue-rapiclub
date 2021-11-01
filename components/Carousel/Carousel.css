@@ -1,0 +1,25 @@
+#carousel .slick-slide.slick-active.slick-current {
+    height: 380px;
+}
+
+#carousel .carousel-card {
+    width: 90%!important;
+    height: 280px!important;
+}
+
+#carousel .carousel-card .bg-carousel-card {
+    position: relative;
+    top: 5rem;
+    left: 50px;
+}
+
+#carousel .carousel-card .bg-carousel-card img {
+    position: relative;
+    top: 3rem;
+    left: 2.5rem;
+}
+
+#carousel .carousel-card .carousel-card-info {
+    position: relative;
+    top: 5.2rem;
+}
